@@ -1,0 +1,26 @@
+# EditorConfig helps developers define and maintain consistent
+# coding styles between different editors and IDEs
+# editorconfig.org
+
+root = true
+
+# Defaults for every file type
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# C# should use Windows EOLs because it was windows code.
+[**.cs]
+end_of_line = crlf
+
+# API Blueprint specification uses tab sizes of 4 spaces, or actual tab characters
+[**.apib]
+indent_size = 4
+
+## Markdown files may need trailing whitespace for some wierd cases (I'm guessing, saw this in many editorconfig examples).
+[**.md]
+trim_trailing_whitespace = false
